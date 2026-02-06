@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+<class>SettingsDialog</class>
+<widget class="QDialog" name="SettingsDialog">
+    <property name="geometry">
+        <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>400</width>
+            <height>300</height>
+        </rect>
+    </property>
+    <property name="windowTitle">
+        <string>Настройки таймера</string>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout">
+        <widget class="QLabel" name="label">
+            <property name="text">
+                <string>Настройте параметры таймера:</string>
+            </property>
+            <property name="font">
+                <font>
+                    <pointsize>12</pointsize>
+                    <bold>true</bold>
+                </font>
+            </property>
+        </widget>
+        
+        <widget class="QLabel" name="label_2">
+            <property name="text">
+                <string>Время таймера:</string>
+            </property>
+        </widget>
+        <widget class="QTimeEdit" name="timeEdit"/>
+        
+        <widget class="QLabel" name="label_3">
+            <property name="text">
+                <string>Текст для отображения:</string>
+            </property>
+        </widget>
+        <widget class="QTextEdit" name="textEdit">
+            <property name="maximumHeight">
+                <number>80</number>
+            </property>
+            <property name="placeholderText">
+                <string>Введите текст, который появится поверх видео...</string>
+            </property>
+        </widget>
+        
+        <widget class="QLabel" name="label_4">
+            <property name="text">
+                <string>Видеофайл:</string>
+            </property>
+        </widget>
+        <layout class="QHBoxLayout" name="horizontalLayout">
+            <widget class="QLineEdit" name="videoPathEdit">
+                <property name="placeholderText">
+                    <string>Выберите видеофайл...</string>
+                </property>
+            </widget>
+            <widget class="QPushButton" name="browseButton">
+                <property name="text">
+                    <string>Обзор</string>
+                </property>
+            </widget>
+        </layout>
+        
+        <spacer name="verticalSpacer">
+            <property name="orientation">
+                <enum>Qt::Vertical</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+                <size>
+                    <width>20</width>
+                    <height>40</height>
+                </size>
+            </property>
+        </spacer>
+        
+        <layout class="QHBoxLayout" name="horizontalLayout_2">
+            <spacer name="horizontalSpacer">
+                <property name="orientation">
+                    <enum>Qt::Horizontal</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                    <size>
+                        <width>40</width>
+                        <height>20</height>
+                    </size>
+                </property>
+            </spacer>
+            <widget class="QPushButton" name="okButton">
+                <property name="text">
+                    <string>OK</string>
+                </property>
+            </widget>
+            <widget class="QPushButton" name="cancelButton">
+                <property name="text">
+                    <string>Отмена</string>
+                </property>
+            </widget>
+        </layout>
+    </layout>
+</widget>
+<resources/>
+<connections/>
+</ui>
